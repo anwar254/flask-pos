@@ -1,0 +1,114 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="pos__session">
+	<header id="header">
+		<div class="navbar nav">
+			<div class="container">
+				<div class="navbar-brand">
+					<a class="navbar-item" href="#">
+						<img src="#" alt="pos branding">
+					</a>
+					<div class="navbar-burger">
+						<span aria-hidden="true"></span>
+						<span aria-hidden="true"></span>
+						<span aria-hidden="true"></span>
+					</div>
+				</div>
+				<div class="navbar-end">
+					<div class="navbar-item">
+						<p class="pos__session__active">Signup</p>
+					</div>
+					<div class="navbar-divider"></div>
+					<div class="navbar-item">
+						<a href="/login">Login</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="section pos__login">
+		<form class="pos__form" action="{{url_for('register')}}" method="POST">
+			<div class="heading session__title">
+				<h1 class="title is-pos-green">Signup</h1>
+				<p class="sub-title">this is a subtitle</p>
+			</div>
+			<div class="columns">
+				<div class="column">
+					<div class="field">
+						<div class="control has-icons-left">
+						  <input class="input inp is-medium" type="text" name="pos-signup-name" placeholder="full name">
+						  <span class="icon is-left">
+						    <i class="fas fa-user"></i>
+						  </span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="columns">
+				<div class="column">
+					<div class="field">
+						<div class="control has-icons-left">
+						  <input class="input inp is-medium" type="text" name="pos-signup-username" placeholder="Username">
+						  <span class="icon is-left">
+						    <i class="fas fa-user"></i>
+						  </span>
+						</div>
+					</div>
+				</div>
+				<div class="column">
+					<div class="field">
+						<div class="control has-icons-left">
+						  <input class="input inp is-medium" type="email" name="pos-signup-email" placeholder="Email">
+						  <span class="icon is-left">
+						    <i class="fas fa-envelope"></i>
+						  </span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="columns">
+				<div class="column">
+					<div class="field">
+						<div class="control has-icons-left">
+						  <input class="input inp is-medium" type="password" name="pos-signup-pwd" placeholder="Password">
+						  <span class="icon is-left">
+						    <i class="fas fa-unlock-alt"></i>
+						  </span>
+						</div>
+					</div>
+				</div>
+				<div class="column">
+					<div class="field">
+						<div class="control has-icons-left">
+						  <input class="input inp is-medium" type="password" name="pos-signup-cpwd" placeholder="Confirm Password">
+						  <span class="icon is-left">
+						    <i class="fas fa-unlock-alt"></i>
+						  </span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- <div class="field">
+				<div class="control has-icons-left">
+				  <input class="input inp is-medium" type="email" name="pos-login-uoe" placeholder="Username or Email">
+				  <span class="icon is-left">
+				    <i class="fas fa-user"></i>
+				  </span>
+				</div>
+			</div>
+			<div class="field">
+				<div class="control has-icons-left">
+				  <input class="input inp is-medium" type="email" name="pos-login-pwd" placeholder="Password">
+				  <span class="icon is-left">
+				    <i class="fas fa-unlock-alt"></i>
+				  </span>
+				</div>
+			</div> -->
+			<div class="field">
+				<button type="submit" class="button btn" name="pos-login-submit">Signup</button>
+			</div>
+		</form>
+	</section>
+</div>
+{% endblock %}

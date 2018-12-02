@@ -1,0 +1,62 @@
+:root{
+	/*These are POS main colors*/
+	/*text color*/
+	--dark__grey: #393E46;
+
+	/*theme colors*/
+	--dark__blue: #092a35;
+	--main__green: #658525;
+	--ligher__green: #cfee91;
+	--ligher__orange: #f8eeb4;
+
+	/*oAuth basic colors / social media basic colors*/
+	--facebook: #3b5998;
+	--google__plus: #DD4B39;
+}
+.noti{
+	position: absolute;
+	width: 200px;
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+.stores{
+	background-color: #e5e5e5;
+	padding: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.pos__avatar{
+	display: flex;
+}
+.is-pos-green{
+	color: var(--main__green)!important;
+}
+.pos__session__active{
+	color: #e5e5e5;
+}
+.navbar{
+	background-color: transparent!important;
+}
+.nav a{
+	color: var(--main__green);
+	font-weight: bold;
+}
+.nav a:hover{
+	color: var(--ligher__green);
+}
+.session__title{
+	margin-bottom: 50px!important;
+}
+.pos__button{
+	width: 100%;
+	height: 2.25em;
+	color: #fff;
+	cursor: pointer;
+    justify-content: center;
+    padding-bottom: calc(0.375em - 1px);
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    padding-top: calc(0.375em - 1px);
+    text-align: center;
+    white-space: nowrap;
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>POS</title>
+		<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/app.css')}}">
+		<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/master.css')}}">
+		<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/bulma.css')}}">
+		<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/fontawesome.css')}}">
+		<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/fontawesome.min.css')}}">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+	</head>
+	<body>
+		<div class="wrapper">
+			{% include 'includes/_messages.html' %}
+			{% block content %}
+			{% endblock %}	
+		</div>
+		<!-- <script src="{{url_for('static', filename='js/main.js')}}"></script> -->
+		<script src="/static/js/main.js"></script>
+	</body>
+</html>

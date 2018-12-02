@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="pos__session">
+	<header id="header">
+		<div class="navbar nav">
+			<div class="container">
+				<div class="navbar-brand">
+					<a class="navbar-item" href="#">
+						<img src="#" alt="pos branding">
+					</a>
+					<div class="navbar-burger">
+						<span aria-hidden="true"></span>
+						<span aria-hidden="true"></span>
+						<span aria-hidden="true"></span>
+					</div>
+				</div>
+				<div class="navbar-end">
+					<div class="navbar-item">
+						<p class="pos__session__active">Login</p>
+					</div>
+					<div class="navbar-divider"></div>
+					<div class="navbar-item">
+						<a href="/register">Signup</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="section">
+		<div class="pos__login">
+			<form class="pos__login__form" name="pos__login__form" method="POST" action="{{url_for('login')}}">
+				<div class="heading session__title">
+					<h1 class="title is-pos-green">Login</h1>
+					<p class="sub-title">this is a subtitle</p>
+				</div>
+				<div class="field">
+					<div class="control has-icons-left">
+					  <input class="input inp is-medium" type="text" name="pos-login-uoe" placeholder="Email" required>
+					  <span class="icon is-left">
+					    <i class="fas fa-envelope"></i>
+					  </span>
+					</div>
+				</div>
+				<div class="field">
+					<div class="control has-icons-left">
+					  <input class="input inp is-medium" type="password" name="pos-login-pwd" placeholder="Password" required>
+					  <span class="icon is-left">
+					    <i class="fas fa-unlock-alt"></i>
+					  </span>
+					</div>
+				</div>
+				<div class="field">
+					<button type="submit" class="button btn" name="pos-login-submit">Signin</button>
+				</div>
+			</form>
+		</div>
+	</section>
+</div>
+{% endblock %}

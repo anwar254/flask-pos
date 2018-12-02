@@ -1,0 +1,118 @@
+:root{
+	/*These are POS main colors*/
+	/*text color*/
+	--dark__grey: #393E46;
+
+	/*theme colors*/
+	--dark__blue: #092a35;
+	--main__green: #658525;
+	--ligher__green: #cfee91;
+	--ligher__orange: #f8eeb4;
+
+	/*oAuth basic colors / social media basic colors*/
+	--facebook: #3b5998;
+	--google__plus: #DD4B39;
+}
+
+body{
+	color: var(--dark__grey);
+}
+/*the website wrapper*/
+div.wrapper{
+	width: 100%;
+	position: relative;
+	height: auto;
+	padding: 0;
+	margin: 0 auto;
+}	
+
+/*Pos session*/
+div.wrapper .pos__session{
+	width: 100%;
+	height: 100vh;
+	padding: 0;
+	background-color: var(--dark__blue);
+}
+div.wrapper .pos__session .pos__login,
+div.wrapper .pos__session .pos__signup{
+	width: 100%;
+	height: 60vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+div.wrapper .pos__session .pos__login .pos__form,
+div.wrapper .pos__session .pos__signup .pos__form{
+	width: 50%;
+}
+div.wrapper .pos__session .inp{
+	outline: none;
+	color: #fff;
+	border-radius: 0;
+	border: 0 solid transparent;
+	border-bottom: 1px solid #e5e5e5;
+	background-color: transparent;
+	box-shadow: 0 0 0 transparent;
+}
+div.wrapper .pos__session .inp::placeholder{
+	color: #afaeae;
+}
+div.wrapper .pos__session .btn{
+	width: 100%;
+	margin-top: 30px;
+	height: 4em;
+	border: 0;
+	color: #fff;
+	background-color: var(--main__green);
+}
+div.wrapper .pos__session .btn:hover{
+	background-color: var(--ligher__green);
+	color: var(--dark__grey);
+}
+div.wrapper .pos__session .pos__o__auth{
+	display: block;
+	width: 40%;
+	margin: 0 auto;
+}
+
+/*dashboard*/
+div.wrapper .pos__dash__left{
+	background-color: var(--dark__blue);
+	padding: 10px;
+	color: #fff;
+	height: 102vh;
+	/*position: fixed;*/
+}
+div.wrapper .pos__dash__left .navigation{
+	width: 100%;
+	color: inherit;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+div.wrapper .pos__dash__left .navigation ul{
+	height: auto;
+	width: 100%;
+}
+div.wrapper .pos__dash__left .navigation ul li{
+	width: 100%;
+	padding: 15px;
+	color: inherit;
+}
+div.wrapper .pos__dash__left .navigation ul li a{
+	width: 100%;
+	padding: 15px 143px;
+	color: #fff;
+}
+div.wrapper .pos__dash__right .pos__content__table{
+	width: 100%;
+}
+div.wrapper .pos__dash__right .pos__content__table .table{
+	width: 100%;
+}
+div.wrapper .pos__dash__right .pos__content__table .table tbody tr:nth-child(odd){
+	background-color: #e5e5e5;
+}
+.store-details{
+	display: flex;
+}

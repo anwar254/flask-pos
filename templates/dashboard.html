@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="columns">
+	<div class="column is-one-quarter pos__dash__left">
+		<div class="pos_dash_branding">
+			<img src="#" alt="pos branding">
+		</div>
+		<div class="pos__nav">
+			<!-- dashbord navigation here -->
+		</div>
+	</div>
+	<div class="column is-three-quarters pos__dash__right">
+		<div class="navbar nav">
+			<div class="container">
+				<div class="navbar-end">
+					<a href="#" class="navbar-item">
+						<div class="pos__avatar">
+							<img src="#" alt="pos avatar">
+							<p>{{session.username}}</p>
+						</div>
+					</a>
+					<a href="/logout" class="navbar-item">
+						logout
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="pos__content">
+			<p>welcome {{ session.username }}</p>
+		</div>
+	</div>
+</div>
+{% endblock %}
