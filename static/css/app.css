@@ -13,12 +13,6 @@
 	--facebook: #3b5998;
 	--google__plus: #DD4B39;
 }
-.noti{
-	position: absolute;
-	width: 200px;
-	justify-content: flex-end;
-	align-items: flex-end;
-}
 .stores{
 	background-color: #e5e5e5;
 	padding: 20px;
